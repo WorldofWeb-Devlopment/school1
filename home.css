@@ -1,0 +1,104 @@
+/* 
+## Primary Color Palette
+
+| Color | Hex Code | HSL Value | Usage |
+|-------|----------|-----------|-------|
+| *Primary (Blue)* | #3B82F6 | hsl(217, 91%, 60%) | Buttons, links, accents |
+| *Secondary (Purple)* | #8B5CF6 | hsl(281, 85%, 61%) | Gradient overlays, accents |
+| *Accent (Orange)* | #F97316 | hsl(10, 78%, 54%) | Highlight accents |
+
+## Background Colors
+
+| Color | Hex Code | Usage |
+|-------|----------|-------|
+| *White* | #FFFFFF | Main background |
+| *Light Blue (Section BG)* | #F0F9FF | Hero & Features sections |
+| *Light Purple* | #F3E8FF | CTA sections |
+| *Dark Slate (Footer)* | #0F172A | Footer background |
+
+## Text Colors
+
+| Color | Hex Code | Usage |
+|-------|----------|-------|
+| *Foreground (Dark)* | #1C2E3C | Main text |
+| *Muted Text* | #6B7280 | Secondary/light text |
+| *White* | #FFFFFF | Text on dark backgrounds |
+
+## Gradient Combinations Used
+
+1. *Primary to Secondary*: #3B82F6 → #8B5CF6 (Blue to Purple)
+2. *Secondary to Accent*: #8B5CF6 → #F97316 (Purple to Orange)
+3. *Green variants*: #10B981 → #14B8A6 (emerald gradients)
+ */
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+
+  font-family: "Inter", sans-serif;
+  
+}
+.navbar{
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+padding: 10px;
+box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+}
+.nav-logo{
+    width: 500px;
+    display: flex;
+    justify-content: center;
+}
+.icon{
+width:100px;
+height: 100px;
+}
+.icon-name{
+    width:317px ;
+    height: 100px;
+    
+}
+
+.nav-items{
+    width: 500px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 30px;
+    background-color:white;
+
+}
+.nav-items a{
+    display: flex;
+    text-decoration: none;
+    color: #1C2E3C;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 10px 20px 10px;    
+}
+.nav-list{
+    position: relative;
+    background-color: #fff;
+     display: inline-block;
+}
+.sub-nav-list{
+    position: absolute;
+    top: 100%;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+      width: 250px;
+      height: fit-content;
+      display: none;
+      flex-direction: column;
+      align-items: flex-start;
+      left: -50px;
+      z-index: 9999;
+      padding: 10px 15px;
+}
+.nav-items a{
+    padding: 10px 10px 12px 10px;
+}
+
+.nav-list:hover .sub-nav-list{
+    display: flex;
+}
