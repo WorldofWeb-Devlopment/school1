@@ -1,3 +1,4 @@
+
 /* 
 ## Primary Color Palette
 
@@ -37,7 +38,9 @@
 body{
 
   font-family: "Inter", sans-serif;
-  
+}
+:root{
+    font-size: 10px;
 }
 .navbar{
 display: flex;
@@ -58,7 +61,6 @@ height: 100px;
 .icon-name{
     width:317px ;
     height: 100px;
-    
 }
 
 .nav-items{
@@ -67,13 +69,14 @@ height: 100px;
     justify-content: space-evenly;
     gap: 30px;
     background-color:white;
+    padding: 10px;
 
 }
 .nav-items a{
     display: flex;
     text-decoration: none;
     color: #1C2E3C;
-    font-size: 20px;
+    font-size: 1.5rem;
     font-weight: 500;
     padding: 10px 10px 20px 10px;    
 }
@@ -84,16 +87,20 @@ height: 100px;
 }
 .sub-nav-list{
     position: absolute;
+    background-color: white;
     top: 100%;
-      box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
-      width: 250px;
+      width: 200px;
       height: fit-content;
-      display: none;
+      display:none;
       flex-direction: column;
       align-items: flex-start;
       left: -50px;
       z-index: 9999;
-      padding: 10px 15px;
+      padding: 20px;
+      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+      border-radius: 1rem;
+      transition: all 0.5sec;
+
 }
 .nav-items a{
     padding: 10px 10px 12px 10px;
@@ -101,4 +108,44 @@ height: 100px;
 
 .nav-list:hover .sub-nav-list{
     display: flex;
+    transition: ease-in 1s;
+    
+}
+.nav-items a:hover{
+    color:#3B82F6 ;
+}
+.text{
+    display: flex;
+    align-items: start;
+    gap: 2rem;
+    font-size: 1.5rem;
+    flex-direction: column;
+     padding: 1rem 2rem;
+    margin: 1rem 2rem;
+}
+.icon2{
+ background-color:#F0F9FF ;
+    color:#3B82F6 ;
+   display: flex;
+    border-radius: 1rem;
+    width: fit-content;
+       padding: 1rem 2rem;
+}
+.maintext{
+   font-size: 40px;
+  font-weight: 700;
+  width: 50rem;
+  background: linear-gradient(90deg,
+      #0A7BFF,   /* Blue */
+      #6F4AF9,   /* Violet */
+      #B946F0,   /* Purple-Pink */
+      #FF3F54    /* Red */
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.para1{
+    font-size: 1.5rem;
+    width: 45rem;
 }
