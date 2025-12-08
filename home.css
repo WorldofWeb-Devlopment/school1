@@ -40,19 +40,17 @@ body {
 :root {
   font-size: 10px;
 }
-section .navbar{
-    width: 100%;
-}
+
 .navbar {
-    width: 100%;
+   width: 100vw;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
-  padding: 10px 0px 10px 0px;
+  padding: 10px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
 }
 .nav-logo {
-  width: 500px;
+  width: auto;
   display: flex;
   justify-content: center;
 }
@@ -81,12 +79,14 @@ section .navbar{
   font-weight: 500;
   padding: 10px 10px 20px 10px;
 }
-.nav-list {
+.nav-list,.nav-list-1,.nav-list-2 {
   position: relative;
   background-color: #fff;
   display: inline-block;
 }
-.sub-nav-list {
+.sub-nav-list,
+.sub-nav-list-1,
+.sub-nav-list-2 {
   position: absolute;
   background-color: white;
   top: 100%;
@@ -110,6 +110,16 @@ section .navbar{
   display: flex;
   transition: ease-in 1s;
 }
+.nav-list-1:hover .sub-nav-list-1{
+  display: flex;
+  transition: ease-in 1s;
+}
+.nav-list-2:hover .sub-nav-list-2{
+   display: flex;
+  transition: ease-in 1s;
+
+}
+
 .nav-items a:hover {
   color: #3b82f6;
 }
