@@ -280,7 +280,7 @@ iframe{
   justify-content: center;
   background-color: #3B82F6;
   padding: 20px;
-  width: 100wh;
+  width: 100%;
   align-items: center;
 }
 .subdiv{
@@ -308,10 +308,10 @@ iframe{
 }
 .corres-content {
   justify-content: center;
-  width: 100%;
+  width: 50%;
   padding: 20px;
   margin: 10px 20px;
-
+  
 }
 .msg1{
   font-weight: bold;
