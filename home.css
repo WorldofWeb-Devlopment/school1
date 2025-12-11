@@ -277,52 +277,61 @@ iframe{
 }
 .corresmsg {
   display: flex;
-  align-items: flex-start;
   justify-content: center;
   background-color: #3B82F6;
-  padding: 10px;
+  padding: 20px;
+  width: 100wh;
+  align-items: center;
+}
+.subdiv{
+  display: flex;
+}
+.sir{
+  display: flex;
+  flex-direction: column;
   width: 100%;
-  height: 100%;
+  max-width: 500px;
+   justify-content: center;
+   align-items: center;
+}
+.sir p{
+  font-weight: bold;
+  font-size:20px;
+  margin-bottom: 10px;
+  color: white;
+}
+.sir img{
+  border-radius: 10px 0px 10px 0px;
+  width: 100%;
+  height: auto;
+  display: block;
 }
 .corres-content {
   justify-content: center;
-  width: 50%;
+  width: 100%;
+  padding: 20px;
+  margin: 10px 20px;
+
 }
 .msg1{
   font-weight: bold;
   color: white;
   font-size: 30px;
 }
-.msg2 , 
-.msg3{
+.msg2{
+
   color: white;
   font-size: 18px;
   margin-top: 10px;
   width: 700px;
   text-align: justify;
 }
-.msg3 b{
+.msg2 b{
   color: black;
 }
-.sir{
-  text-align: center;
-  justify-content: center;
-  width: 50%;
-}
-  
 
-.corres-name{
-  font-weight: bold;
-  font-size:20px;
-  margin-bottom: 10px;
-  color: white;
-  text-align: center;
-}
-.sir img{
-  border-radius: 10px 0px 10px 0px;
-  width: 80%;
-  
-}
+
+
 /* *Primary to Secondary*: #3B82F6 → #8B5CF6 (Blue to Purple)
 2. *Secondary to Accent*: #8B5CF6 → #F97316 (Purple to Orange)
 3. *Green variants*: #10B981 → #14B8A6 (emerald gradients) */
