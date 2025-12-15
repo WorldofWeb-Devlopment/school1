@@ -4,6 +4,7 @@
 }
 body {
   font-family: "Inter", sans-serif;
+  margin: 0;
   
 }
 :root {
@@ -11,12 +12,15 @@ body {
 }
 /* Nav bar */
 .navbar {
-   width: 100vw;
+   width: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  position: sticky;
   padding: 10px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px; 
+  z-index: 9999;
+  top: 0;
 }
 .nav-logo {
   width: auto;
@@ -37,7 +41,7 @@ body {
   display: flex;
   justify-content: space-evenly;
   gap: 30px;
-  background-color: white;
+  /* background-color: white; */
   padding: 10px;
 }
 .nav-items a {
@@ -90,4 +94,52 @@ body {
 
 .nav-items a:hover {
   color: #3b82f6;
+}
+.main-content{
+  background:url(School.jpg);
+  padding: 2rem;
+  width: 100%;
+  background-size: cover;
+}
+
+.main-content h3{
+  color: rgb(0, 0, 0);
+  font-size: 4rem;
+  padding: 1rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 1rem;
+  
+}
+.main-content h3:hover{
+  text-decoration: underline;
+  color:rgb(153, 7, 7); 
+  cursor: pointer;
+}
+.list-1,
+.list-3,
+.list-5{
+   background-color: rgb(211, 234, 255);
+  font-size: 1.9rem;
+  width: 60%;
+  padding: 2rem;
+  margin: 2rem;
+  border-radius: 1rem;
+  line-height: 1.6;
+  text-align: justify;
+  position: relative;
+  left: 8%;
+}
+.list-2,
+.list-4{
+   background-color: rgb(211, 234, 255);
+  font-size: 1.9rem;
+  width: 50%;
+  padding: 2rem;
+  margin: 2rem;
+  border-radius: 1rem;
+  line-height: 1.6;
+  text-align: justify;
+  left: 40%;
+  position: relative;
 }
