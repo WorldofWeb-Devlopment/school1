@@ -95,51 +95,27 @@ body {
 .nav-items a:hover {
   color: #3b82f6;
 }
-.main-content{
-  background:url(School.jpg);
-  padding: 2rem;
-  width: 100%;
-  background-size: cover;
-}
 
-.main-content h3{
-  color: rgb(0, 0, 0);
-  font-size: 4rem;
-  padding: 1rem;
-  font-weight: bold;
-  text-align: center;
-  margin: 1rem;
-  
-}
-.main-content h3:hover{
-  text-decoration: underline;
-  color:rgb(153, 7, 7); 
-  cursor: pointer;
-}
-.list-1,
-.list-3,
-.list-5{
-   background-color: rgb(211, 234, 255);
-  font-size: 1.9rem;
-  width: 60%;
-  padding: 2rem;
-  margin: 2rem;
-  border-radius: 1rem;
-  line-height: 1.6;
-  text-align: justify;
-  position: relative;
-  left: 8%;
-}
-.list-2,
-.list-4{
-   background-color: rgb(211, 234, 255);
-  font-size: 1.9rem;
+.para-content1{
+  display: flex;
+  align-items: start;
+  gap: 20px;
+  background-color: #EEF2FF;
+  padding:20px;
   width: 50%;
-  padding: 2rem;
-  margin: 2rem;
-  border-radius: 1rem;
-  line-height: 1.6;
-  text-align: justify;
-  left: 40%;
-  position: relative;
+  border-radius: 10px;
+  justify-content: center;
+  line-height: 1.7;
+  margin: 10px;
+}
+.img1 img{
+  width: 30px;
+}
+.para1 p{
+  font-size: 15px;
+  font-weight: 500;
+}
+.sub-para h2{
+  font-size: 3rem;
+  font-family: "Poppins", sans-serif;
 }
