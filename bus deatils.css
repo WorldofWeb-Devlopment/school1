@@ -1,0 +1,28 @@
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+}
+.bus-details{
+  display: grid;
+  grid-template-columns: repeat(3,500px);
+  column-gap: 20px;
+  row-gap: 10px;
+  justify-content: center;
+}
+.bus-details div{
+   display: grid;
+  /* grid-template-columns: 1fr; */
+  /* grid-template-rows: repeat(1, min-content); */
+  border: 1px solid black;
+  border-radius: 1rem;
+  padding: 2rem;
+  row-gap: 1rem;
+  box-shadow: 1px 1px 25px rgba(211, 211, 211, 0.5);
+  text-transform: uppercase;
+  
+}
